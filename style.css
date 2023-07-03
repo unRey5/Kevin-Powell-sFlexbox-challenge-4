@@ -10,33 +10,34 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.312rem;
+    line-height: 1.5;
+    color: #222C2A;
 }
 
 header {
     background: #F3EED9;
     height: 70vh;
-    position: relative;
 }
 
 .display-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 200px;
+    text-align: center;
+    padding-top: 150px;
 }
 
 .display-text p {
     text-transform: uppercase;
     letter-spacing: 5px;
+    font-size: 1.5rem;
 }
 h1 {
     text-transform: capitalize;
     color: #824936;
+    font-size: 2rem;
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 .container h2 {
@@ -52,11 +53,9 @@ h1 {
 
 .main_texts {
     display: flex;
-    gap: 50px;
+    gap: 40px;
     justify-content: space-between;
-    align-items: center;
     margin: 0 auto;
-    width: 80%;
 }
 
 .main_texts p {
@@ -72,19 +71,16 @@ h1 {
 .first_section_wrapper {
     display: flex;
     justify-content: space-between;
-    width: 80%;
     margin: 0 auto;
-    gap: 50px;
+    gap: 40px;
     padding: 0;
 
 }
 
 .text_content {
-    display: flex;
-    flex-direction: column;
     text-align: justify;
     color: #fff;
-    gap: 16px;
+    width: 100%;
 }
 
 .text_content h3 {
@@ -92,8 +88,12 @@ h1 {
     color: #F3EED9;
 }
 
-.img_content {
-    width: 100%;
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
 }
 
 .second_section {
@@ -101,3 +101,10 @@ h1 {
     padding: 5rem 0;
 }
 
+@media (max-width: 800px) {
+    .main_texts,
+    .first_section_wrapper {
+        flex-wrap: wrap;
+    }
+    
+}
